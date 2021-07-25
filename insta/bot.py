@@ -65,7 +65,7 @@ browser.implicitly_wait(5)
 first = FirstPage(browser)
 home = first.login()
 
-pages = ['pefabiodemelo', 'rcnaomono', 'genipapos', 'omarcusboaventura', 'masculinidade.saudavel']
+pages = ['rcnaomono', 'pefabiodemelo', 'genipapos', 'omarcusboaventura', 'masculinidade.saudavel']
 
 for page in pages[0:1]:
 	home.user_page(page)
