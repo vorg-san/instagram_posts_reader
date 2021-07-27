@@ -78,6 +78,9 @@ WSGI_APPLICATION = 'insta_posts_reader.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
+				'OPTIONS': {
+					'charset': 'utf8mb4' 
+				},
         'NAME': 'instagram',
         'USER': 'root',
         'PASSWORD': os.environ['MYSQL_PASS'],
@@ -110,7 +113,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Bahia'
 
 USE_I18N = True
 
