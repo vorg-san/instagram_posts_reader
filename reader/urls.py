@@ -8,5 +8,5 @@ urlpatterns = [
     path("", views.index, name="index"),
     # ex: /reader/5/
     path("run_bot/", views.run_bot, name="run bot"),
-    path("<int:question_id>/", views.detail, name="detail"),
+    # path("<int:question_id>/", views.detail, name="detail"),
 ]
